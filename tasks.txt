@@ -1,0 +1,18 @@
+create_user_secure_bash:Create a new user named securebob with /bin/bash shell, set a random password, force password change on first login, and add securebob to the wheel group for sudo access
+
+
+setup_webserver_basic:Install Apache (httpd), enable and start the service, configure firewall to allow HTTP (80) and HTTPS (443), and create a basic index.html page in /var/www/html with the content "Hello from your web server!"
+
+setup_backup_cron:Create a directory /backup, set ownership to backupuser, create a script /usr/local/bin/backup.sh that archives /etc into /backup/etc_backup.tar.gz, and schedule a daily cron job at 3am for backupuser to run the script
+
+lock_down_ssh:Disable root login over SSH, change the SSH port to 2222, restart the SSH service, and verify the changes
+
+configure_firewall_basic:Allow inbound SSH (port 22), HTTP (port 80), and HTTPS (port 443) traffic, then reload the firewall settings
+
+create_symlink_app:Create a symbolic link from /usr/local/bin/myapp to /opt/myapp/bin/myapp and verify it points correctly
+
+manage_file_permissions:Create a directory /opt/securedata, set ownership to root:securegroup, permissions to 750, and verify the settings
+
+setup_cron_logrotate:Create a cron job to run logrotate daily for /var/log/myapp.log and ensure logs rotate correctly
+
+configure_selinux_permissive:Set SELinux mode to permissive temporarily and verify the status
